@@ -9,7 +9,7 @@ function validateSyntax() {
             let resultEl = document.getElementById("resultEl")
 
             
-            //I need to get input to be displayed in a paragraph
+            //I need to get it to check for an p_ + letters and numbers 
             if ( input === "p_") {
                 result = "Valid Syntax 🟢"
             }
