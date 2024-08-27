@@ -6,20 +6,46 @@ function validateSyntax() {
     // TODO: Write your validation logic here
     console.log(input)
         // Check if input starts with 'pet_' and followed by alphanumeric characters
-            let resultEl = document.getElementById("resultEl")
+        let resultEl = document.getElementById("resultEl") 
+
+
+        if ( input === "pet_" ){
+            result = "Valid Syntax 🟢"
+        }
+        else {
+            result = "Invalid Syntax 🔴"
+        }
+
+
+       /* if(!/^"pet_"/.test(input)){
+        result = "Invalid Syntax 🔴"
+        }
+        if(!/4*[0-9]/.test(input)){
+            result = "Invalid Syntax 🔴"
+        }
+        if (!/[A-Z]/.test(input)) {                            
+            result = "Invalid Syntax 🔴"
+        }
+        if(!/[a-z]/.test(input)){
+            result = "Invalid Syntax 🔴"
+        }
+        else {
+            result = "Valid Syntax 🟢"
+        } */
+
+        resultEl.textContent = result 
 
             
-            //I need to get it to check for an p_ + letters and numbers 
-            if ( input === "p_") {
-                result = "Valid Syntax 🟢"
-            }
-            else {
-                result = "Invalid Syntax 🔴"
-            }
 
-            resultEl.textContent = result
+        /* if ( input === "pet_" && ) {
+            result = "Valid Syntax 🟢"
+        }
+        else {
+            result = "Invalid Syntax 🔴"
+        }
+            */
 
-           //document.getElementById('result').innerText = result;
+            
 }
 
 
