@@ -3,6 +3,7 @@
 <head>
     <title>Pet Adoption Validator</title>
     <link rel="stylesheet" href="index.css">
+    <script defer src="script.js" defer></script>
 </head>
 <body>
     <h2>Pet Adoption Syntax Validator</h2>
@@ -11,7 +12,6 @@
     <p><strong>Example:</strong> pet_2015Forrest</p>
     <input type="text" id="petInput" placeholder="Enter pet adoption detail" pattern="(?=[pet_])(?=[0-9]{4,})(?=.*[A-Z])(?=.*[a-z])" title="Pet adoption code patter"> <!-- pattern must start with "pet_ ", followed by 4 numbers, one uppercase letter then at least 1 letter after that -->
     <button onclick="validateSyntax()">Validate</button>
-    <p id="resultEl"></p>
-    <script src="script.js" defer></script>
+    <p id="result"></p>
 </body>
 </html>
